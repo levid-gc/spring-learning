@@ -60,5 +60,49 @@ public class ServiceConfiguration {
 
 实际上，有一些其他的注解与 `@Controller` 有着类似的目的（包括 `@Component`、`@Service` 和 `@Repository`）。你可以为 `HomeController` 添加上述的任意其他注解，其作用是完全相同的。但是，在这里选择使用 `@Controller` 更能描述这个组件在应用中的角色。
 
+<hr />
 
+**1.4.1 Spring 核心框架**：
+
+Spring 核心框架是 Spring 领域中一切的基础，它提供了核心容器和依赖注入框架，另外还提供了一些其他重要的特性。
+
+- Spring MVC：Spring 的 Web 框架，也能用来创建 REST API。
+- 数据持久化的基础支持，尤其是基于模板的 JDBC 支持。
+- Spring WebFlux：反应式风格编程的支持。
+
+<hr />
+
+**1.4.2 Spring Boot**：
+
+- starter 依赖和自动配置
+- Actuator 能够洞察应用运行时的内部工作状况，包括指标、线程 dump 信息、应用的健康状况以及应用可用的环境属性
+- 灵活的环境属性规范
+- 在核心框架的测试辅助功能呢之上提供了对测试的额外支持
+
+<hr />
+
+**1.4.3 Spring Data**：
+
+尽管 Spring 核心框架提供了基本的数据持久化支持，但是 Spring Data 提供了非常令人惊叹的功能：将应用程序的数据 repository 定义为简单的 Java 接口，在定义驱动存储和检索数据的方法时使用一种命名约定即可。
+
+Spring Data 能够处理多种不同类型的数据库，包括关系型数据库（JPA）、文档数据库（Mongo）、图数据库（Neo4j）。
+
+<hr />
+
+**1.4.4 Spring Security**：
+
+一个健壮的安全框架。解决了应用程序通用的安全性需求，包括身份验证、授权和 API 安全性。
+
+<hr />
+
+**1.4.5 Spring Integration 和 Spring Batch**：
+
+- Spring Integration：解决了实时集成问题，在实时集成中，数据在可用时马上会得到处理
+- Spring Batch：解决批处理集成问题，数据可以收集一段时间，直到某个触发器（可能是一个时间触发器）发出信号，表示该批处理数据到了才会对数据进行批处理。
+
+<hr />
+
+**1.4.6 Spring Cloud**：
+
+开发云原生应用程序的一组项目。
 
